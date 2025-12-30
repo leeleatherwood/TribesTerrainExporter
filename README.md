@@ -148,17 +148,6 @@ python TribesTerrainExporter.py Raindance.ted
 - Materials: 184 total, ~104 unique used
 - Flags: 31 unique values
 
-## ❓ Troubleshooting
-
-### "No DML.zip files found"
-The script can still export heightmaps and material data, but won't render the terrain texture without textures.
-
-### "DML file not found"
-Ensure DML files are in `dml/` subdirectory, or place `*Terrain.zip` files in `terrain_archives/`.
-
-### Missing Textures
-Extract texture PNGs to the `textures/` subdirectory from your game files or DML.zip archives.
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -174,4 +163,4 @@ Shazbot! 🔥
 
 ## ⚠️ Disclaimer
 
-This tool was **vibe coded** using **GitHub Copilot (Claude Sonnet)** by an author who freely admits to knowing **absolutely nothing about Python**.
+This tool was **vibe coded** using **GitHub Copilot (Claude Opus 4.5)** by an author who freely admits to knowing **absolutely nothing about Python**.
