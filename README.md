@@ -12,10 +12,10 @@ Export Starsiege: Tribes `.ted` terrain files to heightmaps, material maps, and 
 ## ✨ Features
 
 - 🏔️ **Complete Terrain Export** - Heightmaps, material maps, and fully rendered terrain textures
-- �️ **Dual Mode Operation** - Interactive GUI or command-line batch processing
-- �🚀 **Automatic Dependency Management** - Installs NumPy, Pillow, and TribesToBlender on first run
-- � **Live Preview** - See heightmaps, materials, and terrain textures as they generate (GUI mode)
-- �📦 **Self-Contained** - Downloads required TribesToBlender modules automatically from GitHub
+- 🖥️ **Dual Mode Operation** - Interactive GUI or command-line batch processing
+-  **Automatic Dependency Management** - Installs NumPy, Pillow, and TribesToBlender on first run
+- 👁️ **Live Preview** - See heightmaps, materials, and terrain textures as they generate (GUI mode)
+- � **Self-Contained** - Downloads required TribesToBlender modules automatically from GitHub
 - 🗜️ **Archive Handling** - Extracts textures from DML.zip and terrain data from Terrain.zip
 - 🎨 **DML Parsing** - Full material definition support with texture mapping
 - 🔄 **Tile Transformations** - Proper rotation and flip handling based on material flags
