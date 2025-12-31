@@ -278,8 +278,8 @@ LAYER_PREVIEW_SIZE = 1024
 
 # Number of preview panels
 NUM_PREVIEWS = 4
-PREVIEW_LABELS = ["Terrain", "Heightmap", "Materials", "Flags"]
-DEFAULT_PREVIEW_INDEX = 0  # Terrain Texture is default
+PREVIEW_LABELS = ["Heightmap", "Terrain", "Materials", "Material Flags"]
+DEFAULT_PREVIEW_INDEX = 1  # Terrain Texture is default
 
 # Valid tile sizes for dropdown
 VALID_TILE_SIZES = [16, 32, 64, 128, 256]
@@ -1996,9 +1996,9 @@ if TKINTER_AVAILABLE:
                     self.update_button_states()
                     return
                 
-                # Update preview images
-                self.preview_images[0] = self.export_results.terrain_texture
-                self.preview_images[1] = self.export_results.heightmap_vis
+                # Update preview images (order matches PREVIEW_LABELS)
+                self.preview_images[0] = self.export_results.heightmap_vis
+                self.preview_images[1] = self.export_results.terrain_texture
                 self.preview_images[2] = self.export_results.materials_vis
                 self.preview_images[3] = self.export_results.flags_vis
                 
@@ -2006,8 +2006,8 @@ if TKINTER_AVAILABLE:
                 for i in range(NUM_PREVIEWS):
                     self.update_thumbnail(i)
                 
-                # Update active preview (default to terrain texture)
-                self.active_preview_index = 0
+                # Update active preview (default to terrain texture, index 1)
+                self.active_preview_index = DEFAULT_PREVIEW_INDEX
                 self.update_active_preview()
                 
                 # Update info display with stats
